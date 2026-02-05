@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gray-800">
+      Job Panel - Bienvenido <strong id="Wuser"></strong>
+    </h1>
+
+    <div class="flex items-center gap-4">
+      <button class="text-sm font-medium text-gray-600 hover:text-blue-600">
+        Solicitudes
+      </button>
+      <button class="bg-red-500 text-white px-4 py-2 rounded-md text-sm hover:bg-red-600">
+        Logout
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- CONTENT -->
+<main class="max-w-7xl mx-auto px-6 py-8">
+
+  <!-- FILTERS -->
+  <div class="bg-white p-4 rounded-lg shadow mb-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <select class="border rounded-md p-2">
+      <option>País</option>
+      <option>Colombia</option>
+      <option>Mexico</option>
+    </select>
+
+    <select class="border rounded-md p-2">
+      <option>Industria</option>
+      <option>Tech</option>
+      <option>Marketing</option>
+    </select>
+
+    <select class="border rounded-md p-2">
+      <option>Salario máximo</option>
+      <option>$6'000.000</option>
+      <option>$2'000.000</option>
+    </select>
+
+    <select class="border rounded-md p-2">
+      <option>Publicado hace</option>
+      <option>1 día</option>
+      <option>7 días</option>
+    </select>
+  </div>
+
+  <!-- JOB CARDS -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+    <!-- CARD -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between">
+      <div>
+        <h3 class="font-semibold text-lg">Frontend Developer</h3>
+        <p class="text-sm text-gray-500">Company Name</p>
+        <p class="text-sm text-gray-500 mt-1">Remote • Full time</p>
+      </div>
+
+      <div class="mt-4">
+        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-1 rounded">
+          GRATIS
+        </span>
+
+        <button class="mt-3 w-full bg-blue-500 text-white py-2 rounded-md text-sm hover:bg-blue-600">
+          Aplicar
+        </button>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="bg-white rounded-lg shadow p-4 flex flex-col justify-between">
+      <div>
+        <h3 class="font-semibold text-lg">Marketing Manager</h3>
+        <p class="text-sm text-gray-500">Linked Corp</p>
+        <p class="text-sm text-gray-500 mt-1">Hybrid</p>
+      </div>
+
+      <div class="mt-4">
+        <span class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded">
+          DESTACADO
+        </span>
+
+        <button class="mt-3 w-full bg-blue-500 text-white py-2 rounded-md text-sm hover:bg-blue-600">
+          Aplicar
+        </button>
+      </div>
+    </div>
+
+    <!-- DUPLICA LAS CARDS -->
+  </section>
+
+</main>
+
+<script src="../js/users.js"></script>
+</body>
+</html>

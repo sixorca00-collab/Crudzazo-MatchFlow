@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guardian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- ===== REGISTER ===== -->
+<div id="registerView" class=" flex h-screen justify-center items-center">
+  <div class="bg-white shadow-md rounded-lg p-6 w-80">
+    <h1 class="text-2xl font-bold text-center mb-2">Welcome Back</h1>
+    <h2 class="text-2xl font-bold text-center mb-2">Crudzazo</h2>
+    <p class="text-center text-gray-500 mb-4">Enter your credentials</p>
+    <h4 class="text-center text-lg font-medium mb-4">Register</h4>
+
+    <input id="rUser" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Username">
+    <input id="rPass" type="password" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Password">
+    <input id="CrPass" type="password" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Confirm Password">
+
+    <select id="rRole" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+      <option value="user">User</option>
+      <option value="company">Company</option>
+    </select>
+
+    <button id="btnRegister" class="bg-green-500 hover:bg-green-600 text-white font-semibold w-full py-2 rounded-md">Register</button>
+
+    <p class="text-center mt-3 text-gray-600">
+      Already have account?
+      <button id="goLogin" class="text-green-500 hover:underline">Login</button>
+    </p>
+  </div>
+</div>
+
+<!-- ===== LOGIN ===== -->
+<div id="loginView" class=" flex h-screen justify-center items-center">
+  <div class="bg-white shadow-md rounded-lg p-6 w-80">
+    <h1 class="text-2xl font-bold text-center mb-2">Welcome Back</h1>
+    <h2 class="text-2xl font-bold text-center mb-2">Crudzazo</h2>
+    <p class="text-center text-gray-500 mb-4">Enter your credentials</p>
+    <h4 class="text-center text-lg font-medium mb-4">Login</h4>
+
+    <input id="lUser" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Username">
+    <input id="lPass" type="password" class="border border-gray-300 rounded-md w-full p-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Password">
+
+    <button id="btnLogin" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold w-full py-2 rounded-md">Login</button>
+
+    <p class="text-center mt-3 text-gray-600">
+      Don't have account?
+      <button id="goRegister" class="text-blue-500 hover:underline">Register</button>
+    </p>
+  </div>
+</div>
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

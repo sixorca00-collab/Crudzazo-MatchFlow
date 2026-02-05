@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "id": "dce3",
+      "username": "Jose",
+      "userpass": "7777",
+      "Role": "user"
+    }
+  ],
+  "company": [
+    {
+      "id": "65f4",
+      "username": "Nequi",
+      "userpass": "1111",
+      "Role": "company"
+    },
+    {
+      "id": "233d",
+      "username": "Bancolombia",
+      "userpass": "55555",
+      "Role": "company"
+    }
+  ],
+  "matches": [],
+  "jobs": []
+}

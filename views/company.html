@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Company Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+<!-- HEADER -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gray-800">
+      Marketing Manager – Pipeline
+    </h1>
+    <div>
+    <button id="createBtn"
+    class="bg-green-700 text-white px-4 py-2 rounded-md text-sm hover:bg-green-900">
+      Create Job
+    </button>
+    <button id="logoutBtn"
+    class="bg-red-500 text-white px-4 py-2 rounded-md text-sm hover:bg-red-600">
+      Logout
+    </button>
+    </div>
+  </div>
+
+</header>
+
+<!-- PIPELINE -->
+<main class="px-6 py-6 overflow-x-auto">
+  <div class="flex gap-6 min-w-[1200px]">
+
+    <!-- COLUMN -->
+    <div class="w-64 bg-gray-50 rounded-lg p-3">
+      <h2 class="text-sm font-semibold mb-3 text-blue-600">
+        Aplicado (7)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white p-3 rounded-md shadow">
+          <div class="flex items-center gap-3">
+            <img src="https://i.pravatar.cc/40" class="w-8 h-8 rounded-full" />
+            <div>
+              <p class="text-sm font-medium">Cristina Santana</p>
+              <p class="text-xs text-gray-500">Hace 3 días</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-3 rounded-md shadow">
+          <p class="text-sm font-medium">Gonzalo Martínez</p>
+          <p class="text-xs text-gray-500">Hace 2 días</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN -->
+    <div class="w-64 bg-gray-50 rounded-lg p-3">
+      <h2 class="text-sm font-semibold mb-3 text-yellow-600">
+        Entrevista telefónica (6)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white p-3 rounded-md shadow">
+          <p class="text-sm font-medium">Diana Copel</p>
+          <p class="text-xs text-gray-500">Última actividad hace 1 día</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN -->
+    <div class="w-64 bg-gray-50 rounded-lg p-3">
+      <h2 class="text-sm font-semibold mb-3 text-orange-600">
+        Entrevista personal (6)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white p-3 rounded-md shadow">
+          <p class="text-sm font-medium">Rubén Pino</p>
+          <p class="text-xs text-gray-500">Hace 3 días</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN -->
+    <div class="w-64 bg-gray-50 rounded-lg p-3">
+      <h2 class="text-sm font-semibold mb-3 text-purple-600">
+        Oferta (3)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white p-3 rounded-md shadow">
+          <p class="text-sm font-medium">Alfonso Martínez</p>
+          <p class="text-xs text-gray-500">Oferta enviada</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN -->
+    <div class="w-64 bg-gray-50 rounded-lg p-3">
+      <h2 class="text-sm font-semibold mb-3 text-green-600">
+        Contratado (2)
+      </h2>
+
+      <div class="space-y-3">
+        <div class="bg-white p-3 rounded-md shadow border border-green-400">
+          <p class="text-sm font-medium">Susana Torres</p>
+          <p class="text-xs text-gray-500">Contratada</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<script src="../js/company.js"></script>
+</body>
+</html>
