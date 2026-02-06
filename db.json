@@ -32,6 +32,16 @@
       "status": "Aplicado",
       "companyId": "65f4",
       "createdAt": "2026-02-06T15:25:49.337Z"
+    },
+    {
+      "id": "8469",
+      "title": "Analista",
+      "salary": 300000,
+      "industry": "tec",
+      "country": "col",
+      "status": "Aplicado",
+      "companyId": "233d",
+      "createdAt": "2026-02-06T15:34:24.662Z"
     }
   ]
 }

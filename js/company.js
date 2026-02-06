@@ -103,3 +103,17 @@ saveJobBtn.addEventListener("click", async (e) => {
     alert("Could not save job");
   }
 });
+//Cerrar session.
+const btnLogout = document.getElementById("logoutBtn");
+
+if (btnLogout) {
+  btnLogout.addEventListener("click", () => {
+    // Limpiar sesión
+    localStorage.removeItem("isAuth");
+    localStorage.removeItem("currentUser");
+    localStorage.removeItem("role");
+
+    //  Redirigir al login
+    window.location.href = "../index.html";
+  });
+}
