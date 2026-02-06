@@ -22,5 +22,16 @@
     }
   ],
   "matches": [],
-  "jobs": []
+  "jobs": [
+    {
+      "id": "6acc",
+      "title": "Analista",
+      "salary": 6000000,
+      "industry": "db",
+      "country": "col",
+      "status": "Aplicado",
+      "companyId": "65f4",
+      "createdAt": "2026-02-06T15:25:49.337Z"
+    }
+  ]
 }
